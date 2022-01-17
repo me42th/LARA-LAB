@@ -18,7 +18,7 @@ class AnagramCmd extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'https://codingdojo.org/kata/Anagram/';
 
 
     /**
@@ -52,4 +52,10 @@ class AnagramCmd extends Command
             return strlen($item) <= 8;
         })->unique()->values()->toArray();
     }
+
+    //pxjon4:
+    //const getAnagram = (word) => {
+    //    const letters = word.split("");
+    //    const matriz = letters.map((letter1) => letters.map( (letter2) => letter1+letter2 ));
+    //}
 }
