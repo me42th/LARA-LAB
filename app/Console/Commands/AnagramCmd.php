@@ -11,7 +11,7 @@ class AnagramCmd extends Command
      *
      * @var string
      */
-    protected $signature = 'anagram';
+    protected $signature = 'kata:anagram';
 
     /**
      * The console command description.

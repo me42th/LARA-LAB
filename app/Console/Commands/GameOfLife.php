@@ -1,9 +1,9 @@
 <?php
 namespace App\Console\Commands;
-define('DEAD','.');
-define('ALIVE','*');
-define('D','.');
-define('A','*');
+define('DEAD','□');
+define('ALIVE','▣');
+define('D','□');
+define('A','▣');
 
 use Illuminate\Console\Command;
 
@@ -14,7 +14,7 @@ class GameOfLife extends Command
      *
      * @var string
      */
-    protected $signature = 'gameoflife';
+    protected $signature = 'kata:gameoflife';
 
     /**
      * The console command description.
@@ -26,9 +26,9 @@ class GameOfLife extends Command
     protected $petri = [
         [D,D,D,D,D,D,D,D,D,D,D,D],
         [D,D,D,D,D,D,D,D,D,D,D,D],
-        [D,D,D,D,D,D,A,A,A,D,D,D],
-        [D,D,D,D,D,D,A,D,D,D,D,D],
-        [D,D,D,D,D,D,D,A,D,D,D,D],
+        [D,D,D,D,D,D,D,D,D,D,D,D],
+        [D,D,D,D,A,A,A,A,A,D,D,D],
+        [D,D,D,D,D,D,D,D,D,D,D,D],
         [D,D,D,D,D,D,D,D,D,D,D,D],
         [D,D,D,D,D,D,D,D,D,D,D,D],
         [D,D,D,D,D,D,D,D,D,D,D,D]

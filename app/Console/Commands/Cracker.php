@@ -11,7 +11,7 @@ class Cracker extends Command
      *
      * @var string
      */
-    protected $signature = 'cracker';
+    protected $signature = 'kata:cracker';
 
     /**
      * The console command description.
